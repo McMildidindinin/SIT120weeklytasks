@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" type="text/css" href="Week1_Task_CSS.css" media="screen"/>
+        <title>Week 1 Task</title>
+        
+        
+        <script src="https:/cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <script>
+            function firstfunc() {
+                var img = document.createElement('img');
+                img.src = "./graceful.jpg";
+                img.width = 432
+                img.height = 576
+                document.body.appendChild(img);
+            }
+        </script>
+        <h1>Tester 1</h1>
+        <p style="color: orange">This is a test</p>
+        <br>
+        <p style="color: blue">Of various HTML tags</p>
+        <img src="./sleepy.jpg" max-width=100% alt="Sleepy"/>
+        <br>
+        <button type="button" onclick="firstfunc()">Graceful</button>
+        <br>
+        <script src="Week1_Task_JS.js"></script>
+        
+        <button type="button" onclick="getFullDate()">Date?</button>
+        <p id="demo"></p>
+        
+    </body>
+    <body>
+        <div id="app">
+            
+            <div v-for="todo in todos" :key="todo.title" :style="{textDecoration: todo.checked? 'line-through' :'none' }">
+                <input type="checkbox" v-model="todo.checked"/>
+                {{todo.title}}
+            </div>
+            
+        </div>
+    </body>
+    <body>
+        <title>For those who haven't seen a mussel move</title>
+        <video width="480" height="320" controls>
+            <source src="mussellong.mp4" type="video/mp4">
+        </video>
+    </body>
+    
+
+
+
+
+
+
+</html>
+<script src="./todo.js"></script>
