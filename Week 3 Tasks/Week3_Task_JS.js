@@ -14,3 +14,23 @@ let hwupper = helloworld.toUpperCase();
 console.log(hwupper);
 let sentslice = sentence.slice(6, 15);
 console.log(sentslice);
+
+
+
+
+var stsclass = ["Ironclad", "Silent", "Defect", "Watcher"];
+var stsclscard = [26,28, 30, 22];
+console.log(stsclass);
+console.log(stsclscard);
+
+
+stsclass.push("Arbiter");
+console.log(stsclass);
+
+stsclscard.indexOf(30);
+stsclscard.pop();
+console.log(stsclscard);
+stsclass.sort();
+console.log(stsclass);
+stsclass.unshift("Maurauder");
+console.log(stsclass);
