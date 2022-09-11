@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="Week6_Task_CSS.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="Week7_Task_CSS.css" media="screen"/>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     
     </head>
@@ -37,25 +37,29 @@
                 <br>
                 <textarea v-model="message" placeholder="As far as I can tell I've coded this with appropriate syntax"></textarea>
                 <p>This is where the main information will be placed</p>
-                <p id="app">{{text}}</p>
-                <component1></component1>
+                <p id="app">{{text}}
+                    <br>
+                    <component1></component1>
+                </p>
+                
             </div>
             <div class="column right">
-                <h2>Other side of the window</h2>
-                <input type="checkbox" id="Silent" value="Silent" v-model="checkednames">
-                <label for="Silent">Silent</label>
-                <br>
-                <input type="checkbox" id="Ironclad" value="Ironclad" v-model="checkednames">
-                <label for="Ironclad">Ironclad</label>
-                <br>
-                <input type="checkbox" id="Defect" value="Defect" v-model="checkednames">
-                <label for="Defect">Defect</label>
-                <br>
-                <input type="checkbox" id="Watcher" value="Watcher" v-model="checkednames">
-                <label for="Watcher">Watcher</label>
-                <br>
-                <span>Selected Class: {{checkednames}}</span>
-                
+                <div id="listcheck">
+                    <h2>Other side of the window</h2>
+                    <input type="checkbox" id="Silent" value="Silent" v-model="checkednames">
+                    <label for="Silent">Silent</label>
+                    <br>
+                    <input type="checkbox" id="Ironclad" value="Ironclad" v-model="checkednames">
+                    <label for="Ironclad">Ironclad</label>
+                    <br>
+                    <input type="checkbox" id="Defect" value="Defect" v-model="checkednames">
+                    <label for="Defect">Defect</label>
+                    <br>
+                    <input type="checkbox" id="Watcher" value="Watcher" v-model="checkednames">
+                    <label for="Watcher">Watcher</label>
+                    <br>
+                    <span>Selected Class: {{checkednames}}</span>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -68,7 +72,7 @@
         
         
     </body>
-    <script src="Week6_Task_Vue.js"></script>
+    <script src="Week7_Task_Vue.js"></script>
 
 
 
