@@ -1,0 +1,16 @@
+var helloworld = 'Hello World';
+console.log(helloworld);
+console.log(helloworld[5]);
+let hwlength = helloworld.length;
+console.log(hwlength);
+let sentence = "A quick brown foxdog did a something";
+let sentpart = sentence.slice(20);
+console.log(sentence);
+console.log(sentpart);
+let reppart = sentence;
+let newreppart = reppart.replace("foxdog", "cowchicken");
+console.log(newreppart);
+let hwupper = helloworld.toUpperCase();
+console.log(hwupper);
+let sentslice = sentence.slice(6, 15);
+console.log(sentslice);
