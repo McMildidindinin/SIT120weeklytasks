@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Week6_Task_CSS.css" media="screen"/>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+    </head>
+    <body>
+        <div class="header">
+            <h1> SIT120 Project Early</h1>
+            <p> Resizing browser test</p>
+        </div>
+        <div class="topa">
+            <a href="#">Link Test</a>
+            <a href="#">Link Test</a>
+            <a href="#">Link Test</a>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <h2> Side Column</h2>
+                <input v-model="message" placeholder="I don't understand why">
+                <p>Message is: {{message}}</p>
+                <br>
+                <br>
+                <br>
+                <input v-model="password" placeholder="the data doesn't show">
+                <p>Should I show you?   {{password}}</p>
+            </div>
+            <div class="column middle">
+                <h2>Main content of webpage</h2>
+                <span> Test Long Form Message Box</span>
+                <p style="white-space: pre-line;">{{message}}</p>
+                <br>
+                <textarea v-model="message" placeholder="As far as I can tell I've coded this with appropriate syntax"></textarea>
+                <p>This is where the main information will be placed</p>
+            </div>
+            <div class="column right">
+                <h2>Other side of the window</h2>
+                <input type="checkbox" id="Silent" value="Silent" v-model="checkednames">
+                <label for="Silent">Silent</label>
+                <br>
+                <input type="checkbox" id="Ironclad" value="Ironclad" v-model="checkednames">
+                <label for="Ironclad">Ironclad</label>
+                <br>
+                <input type="checkbox" id="Defect" value="Defect" v-model="checkednames">
+                <label for="Defect">Defect</label>
+                <br>
+                <input type="checkbox" id="Watcher" value="Watcher" v-model="checkednames">
+                <label for="Watcher">Watcher</label>
+                <br>
+                <span>Selected Class: {{checkednames}}</span>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <a href="#">Link Test</a>
+            <a href="#">Link Test</a>
+            <a href="#">Link Test</a>
+            <a href="#">Link Test</a>
+            <a href="#">Link Test</a>
+        </div>
+        
+        
+    </body>
+    
+
+
+
+
+
+</html>
